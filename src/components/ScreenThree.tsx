@@ -5,23 +5,23 @@ import { FrameNavigationProp } from "react-nativescript-navigation";
 
 import { MainStackParamList } from "../NavigationParamList";
 
-type ScreenTwoProps = {
-    route: RouteProp<MainStackParamList, "Two">,
-    navigation: FrameNavigationProp<MainStackParamList, "Two">,
+type ScreenThreeProps = {
+    route: RouteProp<MainStackParamList, "Three">,
+    navigation: FrameNavigationProp<MainStackParamList, "Three">,
 };
 
-export function ScreenTwo({ navigation, route }: ScreenTwoProps) {
+export function ScreenThree({ navigation, route }: ScreenThreeProps) {
     return (
         <flexboxLayout style={styles.container}>
             <label style={styles.text}>
-                You're viewing screen two, HaHa!
+                You're viewing screen Three!
             </label>
             <label style={styles.text}>
                 Message: {route.params.message}
             </label>
             <button
                 style={styles.button}
-                onTap={() => navigation.goBack()}
+                onTap={() => navigation.goBack}
             >
                 Go back
             </button>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         height: "100%",
         flexDirection: "column",
         justifyContent: "center",
-        backgroundColor: "yellow",
+        backgroundColor: "green",
     },
     text: {
         textAlignment: "center",

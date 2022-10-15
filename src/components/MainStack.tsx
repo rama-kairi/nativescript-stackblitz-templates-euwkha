@@ -3,6 +3,7 @@ import * as React from "react";
 import { stackNavigatorFactory } from "react-nativescript-navigation";
 
 import { ScreenOne } from "./ScreenOne";
+import { ScreenThree } from './ScreenThree';
 import { ScreenTwo } from "./ScreenTwo";
 
 const StackNavigator = stackNavigatorFactory();
@@ -28,6 +29,10 @@ export const MainStack = () => (
             <StackNavigator.Screen
                 name="Two"
                 component={ScreenTwo}
+            />
+            <StackNavigator.Screen
+                name="Three"
+                component={ScreenThree}
             />
         </StackNavigator.Navigator>
     </BaseNavigationContainer>

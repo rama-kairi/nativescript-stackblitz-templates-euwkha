@@ -29,6 +29,11 @@ export function ScreenOne({ navigation }: ScreenOneProps) {
       >
         Go to next screen
       </button>
+      <button className='bg-blue-600 text-white text-lg'
+        onTap={() => navigation.navigate("Three", {"message": "Hello Data"})}
+      >
+        Go to Third Screen!
+      </button>
     </flexboxLayout>
   );
 }
